@@ -1,4 +1,4 @@
-package ForoAlura.ForoAluraapi;
+package ForoAluraApi;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class ForoAluraapiApplication {
 
 	public static void main(String[] args) {
+
 		SpringApplication.run(ForoAluraapiApplication.class, args);
 	}
 
