@@ -45,3 +45,7 @@ https://github.com/MatiasJB95/ForoAlura/assets/115195236/45b4880f-3803-4d81-995d
 https://app.aluracursos.com/emprega-one/profile/matiasss95
 
 
+
+![cms_files_10224_1673890737Prancheta_9](https://github.com/MatiasJB95/ForoAlura/assets/115195236/87aecb87-091d-401d-9230-6fefba7880d0)
+
+
