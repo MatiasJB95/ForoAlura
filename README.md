@@ -25,6 +25,14 @@ La API cuenta con un endpoint para obtener el detalle de un tópico específico.
 La API cuenta con un endpoint para eliminar un tópico. Se aceptan solicitudes DELETE en la URI /topicos/{id}, donde {id} representa el identificador único del tópico a eliminar.
 
 Además de estas funcionalidades principales, para completar el foro, sería necesario contar con otros endpoints para crear, listar, actualizar y eliminar otras entidades, como usuarios y respuestas.
+### Registro de usuarios y autenticación
+La API también incluye funcionalidades para el registro de nuevos usuarios y la autenticación de los mismos. Se aceptan solicitudes POST en la URI /usuarios para registrar nuevos usuarios. Los datos del usuario, como el nombre, correo electrónico, nombre de usuario y contraseña, deben enviarse en el cuerpo de la solicitud en formato JSON. La API aplica las siguientes reglas de negocio:
+
+Todos los campos son obligatorios.
+No se permiten registros duplicados con el mismo correo electrónico o nombre de usuario.
+La contraseña del usuario se almacena de forma segura utilizando encriptación. Se recomienda utilizar una función de hashing para proteger la contraseña en caso de una posible brecha de seguridad.
+
+La autenticación de los usuarios se realiza mediante el uso de JSON Web Tokens (JWT). Después de que un usuario se registre correctamente e inicie sesión proporcionando sus credenciales (correo electrónico/contraseña), la API generará un JWT que se enviará al cliente. El cliente debe incluir el JWT en los encabezados de las solicitudes posteriores para demostrar que está autenticado y autorizado para acceder a los recursos protegidos.
 
 ## Tecnologías utilizadas
 
